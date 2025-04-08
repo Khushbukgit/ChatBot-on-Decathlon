@@ -1,0 +1,28 @@
+def decathlon_chatbot():
+    print("Welcome to Decathlon Chatbot! 🏀🏸⛺")
+    print("How can I help you today?")
+    print("You can ask things like:")
+    print("- 'Find running shoes'")
+    print("- 'Store near me'")
+    print("- 'Return policy'")
+    print("- 'Exit'\n")
+
+    while True:
+        user_input = input("You: ").lower()
+
+        if "running shoes" in user_input or "shoes" in user_input:
+            print("Bot: We have a wide range of running shoes! Check out: https://www.decathlon.in/running-shoes")
+        elif "store" in user_input or "location" in user_input:
+            print("Bot: You can find your nearest Decathlon store here: https://www.decathlon.in/store-locator")
+        elif "return policy" in user_input or "return" in user_input:
+            print("Bot: You can return your product within 90 days with the bill. More info here: https://www.decathlon.in/return-policy")
+        elif "help" in user_input or "options" in user_input:
+            print("Bot: You can ask about:\n- Products\n- Store Locations\n- Return Policies\n- Exit")
+        elif "exit" in user_input or "bye" in user_input:
+            print("Bot: Thank you for visiting Decathlon! Have a sporty day! 🏃‍♂️")
+            break
+        else:
+            print("Bot: I'm sorry, I didn't get that. Can you please rephrase or type 'help' for options?")
+
+# Run the chatbot
+decathlon_chatbot()
